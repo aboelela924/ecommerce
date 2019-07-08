@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="160dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="10dp">
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        card_view:cardCornerRadius="4dp">
+
+
+        <ImageView
+            android:id="@+id/product_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside" />
+
+        <FrameLayout
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="1dp"
+            android:layout_gravity="top|right">
+
+            <ImageView
+                android:id="@+id/like_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/unchecked"/>
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/recycler_view_element_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/AVLoadingIndicatorView.Large"
+                android:visibility="gone"
+                app:indicatorName="SemiCircleSpinIndicator"
+                app:indicatorColor="#000000"
+                android:layout_gravity="center"></com.wang.avi.AVLoadingIndicatorView>
+
+        </FrameLayout>
+    </android.support.v7.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/product_name_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/product_price_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+            <TextView
+                android:text="---"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"/>
+</LinearLayout>
+
+
+

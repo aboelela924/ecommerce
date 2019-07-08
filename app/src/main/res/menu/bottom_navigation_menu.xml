@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/icons8_home_page_50"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/deals"
+        android:icon="@drawable/icons8_movie_ticket_64"
+        android:title="Deals"/>
+
+    <item
+        android:id="@+id/favorite"
+        android:icon="@drawable/icons8_heart_outline_24"
+        android:title="Favorite"/>
+
+    <item
+        android:id="@+id/cart"
+        android:icon="@drawable/icons8_return_purchase_filled_64"
+        android:title="Cart"/>
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/icons8_user_50"
+        android:title="Profile"/>
+</menu>
